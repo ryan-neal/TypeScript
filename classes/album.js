@@ -1,33 +1,24 @@
+"use strict";
 // Let's create an album class
-
-
+exports.__esModule = true;
 // What do we need to create a class and export it?
-
-export class Album{
-    // What fields do we need?
-    bandName: string;
-    albumName: string;
-    year: number;
-    isGood: boolean;
-
+var Album = /** @class */ (function () {
     // What goes in our constructor?
-    constructor(artist: string, album: string, year: number, review: boolean){
+    function Album(artist, album, year, review) {
         this.bandName = artist;
         this.year = year;
         this.albumName = album;
         this.isGood = review;
     }
-
     //What methods might we want?
-    updateIsGood(review: boolean): boolean{
+    Album.prototype.updateIsGood = function (review) {
         return this.isGood = review;
-    }
-
-
-}
-
+    };
+    return Album;
+}());
+exports.Album = Album;
 // How can we test it?
-let letItBe: Album = new Album("Let it Be", "The Beatles", 1970, true);
+var letItBe = new Album("Let it Be", "The Beatles", 1970, true);
 console.log(letItBe);
 letItBe.updateIsGood(false);
 console.log(letItBe);

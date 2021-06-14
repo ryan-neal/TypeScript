@@ -1,16 +1,9 @@
 //Let's declare some variables!
-
 //How can I declare a variable artist that stores "The Beatles"?
-let artist: string = "The Beatles";
-
-
+var artist = "The Beatles";
 //How can I declare a variable numberOfRecords with the number of Beatles album?
-let numberOfRecords: number = 13;
-
-
-
+var numberOfRecords = 13;
 //How can I declare a variable isGood with a boolean of true?
-let isGood: boolean = true;
-
+var isGood = true;
 console.log(artist);
-console.log(typeof(artist));
+console.log(typeof (artist));
